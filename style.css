@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background-color: #fcde67;
+    display: flex;
+    flex-direction: column;
+    color: #030e12;
+}
+
+.headingDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    margin-top: 2%;
+}
+
+.btnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    
+}
+
+.addBook, .submitBtn {
+    width: 12%;
+    padding: 0.6%;
+    background-color: #5bccf6;
+    border: 3px black solid;
+    border-radius: 8px;
+    font-size: 100%;
+    font-style: bold;
+}
+
+.addBook:active, .submitBtn:active {
+    background-color: #fcde67;
+}
+
+.formDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5%;
+    
+}
+
+.bkform {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
+}
+
+.flabel {
+    font-size: 110%;
+    padding: 4px;
+}
+
+#title, #author, #pages {
+    margin: 10px;
+    background-color: #fcde67;
+    border: none;
+    border-bottom: 2px black solid;
+    height: 10%;
+    font-size: 16px;
+}
+
+#pages {
+    margin-right: 24px;
+}
+
+
+#title:focus, #author:focus, #pages:focus {
+    color: crimson;
+    border-bottom: 2px crimson solid;
+    font-size: 24px;
+    outline: none;
+}
+
+#title:focus::placeholder, #author:focus::placeholder, #pages:focus::placeholder {
+    color: crimson;
+}
+
+.subBtnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.bkTable {
+    border-collapse: separate;
+    border-spacing: 5px;
+    caption-side: top;
+    table-layout: auto;
+    width: 80%;
+    vertical-align: baseline;
+    background-color: #5bccf6;
+    border: 3px #030e12 solid;
+    border-radius: 8px;
+}
+
+.bkTable thead th {
+    font-size: 20px;
+    border-bottom: 3px #030e12 solid;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+
+.bkTable tbody tr td {
+    text-align: center;
+    background-color: #fcde67;
+    padding: 4px;
+}
+
+.readBtn, .deleteBtn {
+    padding: 0 20px;
+    border: 2px #030e12 solid;
+    border-radius: 10px;
+}
+
+.readBtn:active, .deleteBtn:active {
+    background-color: crimson;
+    border: 2px #5bccf6 solid;
+}
