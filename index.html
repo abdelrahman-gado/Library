@@ -16,13 +16,13 @@
     </div>
     <div class="formDiv">
         <form class="bkForm">
-            <input type="text" id="title" class="fInput" placeholder="Title" autocomplete="off">
-            <input type="text" id="author" class="fInput" placeholder="Author" autocomplete="off">
-            <input type="number" id="pages" class="fInput" placeholder="Pages" autocomplete="off">
+            <input type="text" id="title" class="fInput" placeholder="Title" autocomplete="off" required>
+            <input type="text" id="author" class="fInput" placeholder="Author" autocomplete="off" required>
+            <input type="number" id="pages" class="fInput" placeholder="Pages" autocomplete="off" required>
             <label for="read" class="flabel">Read</label>
             <input type="checkbox" id="read" name="read">
             <div class="subBtnDiv">
-                <button class="submitBtn">Submit</button>
+                <input type="button" class="submitBtn" value="Submit">
             </div>
         </form>
     </div>
@@ -37,14 +37,6 @@
                 <th>Remove Book</th>
             </thead>
             <tbody class="tbBody">
-                <tr>
-                    <td>The Hobbit</td>
-                    <td>Abdo Gado</td>
-                    <td>596</td>
-                    <td>Read</td>
-                    <td><button class="readBtn">Read</button></td>
-                    <td><button class="deleteBtn">delete</button></td>
-                </tr>
             </tbody>
         </table>
     </div>
