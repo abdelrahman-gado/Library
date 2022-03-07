@@ -1,3 +1,14 @@
+class Book {
+
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+
+}
+
 let myLibrary = [];  // array of books objects
 
 const table = document.querySelector(".bkTable");
@@ -137,12 +148,4 @@ function deleteBook(e) {
             row.dataset.index = String(parseInt(row.dataset.index) - 1);
         }
     })
-}
-
-// Constructor for Book objects
-function Book(title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
 }
